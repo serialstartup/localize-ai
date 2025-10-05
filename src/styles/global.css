@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom components for repeated patterns */
+@layer components {
+  .btn-primary {
+    @apply bg-purple-600 px-6 py-3 rounded-lg flex-row items-center justify-center;
+  }
+  
+  .btn-primary-text {
+    @apply text-white font-medium text-base;
+  }
+  
+  .heading-primary {
+    @apply text-2xl font-bold text-purple-600 text-center;
+  }
+  
+  .heading-secondary {
+    @apply text-gray-500 text-center text-base;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden;
+  }
+  
+  .input-container {
+    @apply bg-gray-50 rounded-xl px-4 py-2 border border-gray-200 min-h-[44px];
+  }
+  
+  .avatar-bot {
+    @apply w-9 h-9 rounded-full bg-purple-600 justify-center items-center mr-2 self-end mb-1;
+  }
+  
+  .avatar-user {
+    @apply w-8 h-8 rounded-full bg-gray-200 justify-center items-center ml-2 self-end mb-1;
+  }
+  
+  .message-container {
+    @apply max-w-[80%] rounded-xl shadow-md overflow-hidden;
+  }
+  
+  .message-user {
+    @apply bg-purple-600;
+  }
+  
+  .message-assistant {
+    @apply bg-white;
+  }
+  
+  .message-text-user {
+    @apply text-white text-base leading-relaxed font-normal;
+  }
+  
+  .message-text-assistant {
+    @apply text-gray-900 text-base leading-relaxed font-normal;
+  }
+}
